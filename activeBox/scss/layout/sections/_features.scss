@@ -1,0 +1,34 @@
+.features {
+    padding: 100px 0;
+    .flex {
+        div {
+            width: 33%;
+            margin-bottom: 50px;
+            padding: 0 30px;
+            &:nth-child(1n + 4) {
+                margin-bottom: 0;
+            }
+            h3 {
+                line-height: 4;
+            }
+            i {
+                color: $color-primary;
+                font-size: 50px;
+            }
+            @include tablet {
+                width: 50%;
+            }
+            @include mobile {
+                width: 100%;
+                * {
+                    max-width: 300px;
+                    margin: 0 auto;
+                }
+                margin-bottom: 30px !important;
+                &:last-child {
+                    margin-bottom: 0px !important;
+                }
+            }
+        }
+    }
+}

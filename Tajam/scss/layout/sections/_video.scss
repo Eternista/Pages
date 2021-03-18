@@ -1,0 +1,21 @@
+.video {
+    background-image: url(".../../../images/videoImage.png");
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    * {
+        color: #fff;
+    }
+    i {
+        cursor: pointer;
+        font-size: 100px;
+        margin-bottom: 30px;
+        transition: .3s;
+        &:hover {
+            color: $color-primary;
+        }
+    }
+}

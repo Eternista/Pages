@@ -1,0 +1,28 @@
+.banner {
+    min-height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 200px 0 80px;
+    background-image: url('.../../../images/banner.jpg');
+    background-size: cover;
+    h1 {
+        max-width: 950px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    p {
+        max-width: 900px;
+        margin: 0 auto;
+        font-size: 22px;
+        line-height: 1.5;
+        font-weight: 300;
+        margin-bottom: 60px;
+        @include tablet {
+            padding: 0 40px;
+        }
+    }
+    
+}

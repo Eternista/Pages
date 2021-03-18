@@ -1,0 +1,37 @@
+button, input, textarea {
+    font-size: 16px;
+    padding: 15px 20px;
+    min-width: 160px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid;
+    transition: .3s linear;
+    font-family: $Extra;
+    cursor: pointer;
+    &.small {
+        min-width: auto;
+    }
+    &.long {
+        min-width: 300px;
+    }
+}
+
+input, textarea {
+    border-color: $color-body;
+    min-width: 80%;
+    font-family: $Normal;
+    text-transform: none;
+    cursor: text;
+    color: $color-body;
+}
+
+.primary {
+    border-color: $color-primary;
+    background-color: transparent;
+    color: $color-primary !important;
+    &:hover {
+        background-color: $color-primary;
+        color: #fff !important;
+    }
+}

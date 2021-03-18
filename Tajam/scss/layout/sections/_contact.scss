@@ -1,0 +1,74 @@
+.contact {
+    padding: 100px 20px;
+    @include tablet {
+        padding: 80px 20px;
+    }
+    @include mobile {
+        padding: 60px 20px;
+    }
+    .flex {
+        form, .logos {
+            width: 50%;
+            *:not(button) {
+                text-align: left;
+            }
+        }
+        form {
+            button {
+                display: block;
+            }
+            textarea {
+                resize: none;
+            }
+            input,textarea {
+                color: $color-body;
+                min-width: 300px;
+                width: 80%;
+                cursor: text;
+            }
+        }
+        .logos {
+            align-items: flex-start;
+            h2 {
+                margin-bottom: 0;
+            }
+            .logo {
+                width: 50%;
+            }
+        }
+        @include mobile {
+            form, .logos {
+                width: 100%;
+                max-width: 400px;
+                padding: 0 30px;
+                margin: 0 auto;
+            }
+            form {
+                margin-bottom: 40px;
+                input, textarea {
+                    width: 100%;
+                    min-width: auto;
+                }
+            }
+            .logos {
+                h2 {
+                    margin: 0 auto;
+                    margin-bottom: 20px;
+                    text-align: center;
+                }
+                .logo {
+                    padding: 20px 0;
+                    // padding-left: 0;
+                    img {
+                        width: 80%;
+                        height: auto;
+                        // margin-bottom: 20px;
+                        display: block;
+                        margin: 0 auto;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,89 @@
+header {
+    height: 100px;
+    padding: 37px 20px;
+    display: flex;
+    max-width: 1170px;
+    width: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+    position: absolute;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    .fas {
+        display: none;
+        position: relative;
+        z-index: 99;
+    }
+    img {
+        height: 100%;
+        width: auto;
+    }
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 50%;
+        li {
+            a {
+                color: rgba(255,255,255,.8);
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-size: 13px;
+                transition: .3s linear;
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+    }
+    @include tablet {
+        position: fixed;
+        left: 0;
+        top: 0;
+        transform: none;
+        background-color: #313454;
+        border-bottom: none;
+        .fa-bars {
+            display: block;
+            color: #fff;
+            font-size: 32px;
+        }
+        ul {
+            position: absolute;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            height: 100vh;
+            width: 100vw;
+            left: 100%;
+            top: 0;
+            opacity: 0;
+            transition: opacity .3s linear;
+            background-color: rgba(30,30,30,0.7);
+            li {
+                padding: 20px;
+                a {
+                    font-size: 2.5em;
+                }
+            }
+        }
+        &.active {
+            ul {
+                left: 0;
+                opacity: 1;
+            }
+            .fa-bars {
+                display: none;
+            }
+            .fa-times {
+                display: block;
+                color: #fff;
+                font-size: 32px;
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.aboutUs {
+    padding: 100px 0;
+    .wrapper {
+        img {
+            width: 30%;
+            padding: 40px;
+            object-fit: contain;
+        }
+        .aboutContent {
+            width: 70%;
+            text-align: left;
+            * {
+                text-align: left;
+            }
+            button {
+                margin: 0 0;
+            }
+        }
+        @include mobile {
+            img {
+                display: none;
+            }
+            .aboutContent {
+                width: 100%;
+                padding: 0 20px;
+            }
+        }
+    }
+}

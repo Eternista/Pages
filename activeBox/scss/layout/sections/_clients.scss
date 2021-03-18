@@ -1,0 +1,47 @@
+.clients {
+    display: flex;
+    height: 500px;
+    img {
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .content {
+        background-color: #53354a;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 60px;
+        width: 50%;
+        h2,h3 {
+            color: #fff;
+            max-width: 600px;
+            text-align: left;
+        }
+        h2 {
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+        h3 {
+            font-weight: 500;
+        }
+    }
+    @include tablet {
+        img {
+            object-position: 70%;
+        }
+        .content {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+    }
+     @include mobile {
+         height: 600px;
+         flex-wrap: wrap;
+         img, .content {
+             width: 100%;
+             height: 300px;
+         }
+     }
+}

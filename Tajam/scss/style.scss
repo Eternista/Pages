@@ -1,0 +1,21 @@
+//INC
+
+@import "./inc/mixins";
+@import "./inc/variables";
+@import "./inc/fonts";
+@import "./inc/basic";
+@import "./inc/buttons";
+
+//LAYOUT
+@import "./layout/header";
+@import "./layout/footer";
+
+//LAYOUT/SECTIONS
+@import "./layout/sections/banner";
+@import "./layout/sections/aboutUs";
+@import "./layout/sections/video";
+@import "./layout/sections/features";
+@import "./layout/sections/works";
+@import "./layout/sections/team";
+@import "./layout/sections/clients";
+@import "./layout/sections/contact";

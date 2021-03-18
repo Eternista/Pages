@@ -1,0 +1,123 @@
+//RESET
+* {
+ margin: 0;
+ padding: 0;
+ line-height: 1;
+ box-sizing: border-box;
+ font-size: 1em;
+ text-decoration: none;
+ list-style: none;
+ text-align: center;
+}
+
+body {
+    font-size: 16px;
+    font-family: $Normal;
+    color: $color-body;
+}
+
+h1, h2, h3, a {
+    font-weight: bold;
+    color: #413d4b;
+    font-family: $Heading;
+}
+p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+h1 {
+    font-size: 2em;
+    // text-transform: uppercase;
+    font-weight: bold;
+    max-width: 950px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    color: #fff;
+}
+h2 {
+    font-size: 1.75em;
+    margin-bottom: 30px;
+    // font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    &.extra {
+        font-weight: 400;
+        font-style: italic;
+        font-family: $Extra;
+        font-size: 2.5em;
+        letter-spacing: 1px;
+    }
+}
+
+h3 {
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.wrapper {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.separate {
+    width: 70px;
+    height: 2px;
+    background-color: $color-body;
+    margin: 0 auto 30px;
+    &.separateWhite {
+        background-color: #fff;
+    }
+    &.separatePrimary {
+        background-color: $color-primary;
+    }
+}
+
+@include tablet {
+    h1 {
+        font-size: 3.5em;
+        text-transform: uppercase;
+        padding: 0 40px;
+    }
+    h2 {
+        font-size: 1.75em;
+        &.italic {
+            font-weight: 400;
+            font-style: italic;
+            font-family: $Extra;
+            font-size: 2em;
+            letter-spacing: 1px;
+        }
+    }
+    
+    h3 {
+        font-size: 1em;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+}
+
+@include mobile {
+    h1 {
+        font-size: 2.75em;
+        text-transform: uppercase;
+        padding: 0 40px;
+    }
+    h2 {
+        font-size: 1.5em;
+        &.italic {
+            font-weight: 400;
+            font-style: italic;
+            font-family: $Extra;
+            font-size: 1.75em;
+            letter-spacing: 1px;
+        }
+    }
+}
